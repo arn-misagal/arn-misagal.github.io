@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+<style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.active {
+    color: #ffa630;
+    text-decoration: underline;
+    font-weight: bold;
+}
+body {
+    overflow-x: hidden;
+    background-color: white;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    color: white;
+    background-color: rgba(41, 40, 40, 0.363);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+.logo{
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(235, 193, 6);
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.bar{
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    tab-size: 100px;
+    height: 40px; 
+    width: 100px;
+}
+.nav-links li:hover{
+    background: rgba(212, 173, 44, 0.685);
+    border-radius: 10px;
+    padding: 8px;
+    transform: translateY(10px);
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 70px;
+        
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #4DA1A9;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+
+    }
+    .nav-links li {
+        margin: 30px auto;
+    }
+}
+</style>
+   
+<body>
+    <nav class="navbar">
+        <h1 class="logo">TraveLXTours</h1>
+             <ul class="nav-links">
+                 <li><a href="/navbar.html">Home</a></li><hr>
+                 <li><a href="/destination.html">Best Destination Sites</a></li>
+                 <li><a href="/AboutusInterface.html">About Us</a></li>
+                 <li class="active"><a href="/BookInterface.html">Book Now</a></li>
+                 <input class="bar" type="text" placeholder="Search.." name="search" >
+             </ul>   
+             <img src="/Image/menu-btn.png" alt="" class="menu-btn">         
+     </nav>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <div class="container">
+    <div class="book">
+    <form >
+        <h1>Book your Vacation here</h1>
+        <input type="text" placeholder="Name">
+        <input type="number" placeholder="Contact Number">
+        <label for="date">Choose your preferred date</label>
+        <input type="date" placeholder="date">
+        <input type="text" list="tech" placeholder="Promo Days">
+        <datalist id="tech">
+            <option>Day Time</option>
+            <option>2 days 1 Night</option>
+            <option>3 days 2 Night</option>
+            <option>4 days 3 Nights</option>
+        </datalist>
+        <input type="text" placeholder="Number of Participants">
+        <button>Submit</button>
+    </div>
+</div>
+</form>
+</body>
+
+</html>

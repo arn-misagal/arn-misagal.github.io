@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+.container{
+    display: flex;
+    flex-direction:column ;
+    background-image: url(/Image/pexels-pixabay-265024.jpg);
+    background-size: cover;
+    
+}
+.book{
+    align-items: center;
+    display: flex;
+    flex-direction:column ;
+    text-align: center;
+    
+}
+form{
+    margin-top: 122px;
+    text-align: center; 
+    margin-right: 1px;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding: 30px;
+    border-radius: 10px;  
+    color: white;
+}
+ input{
+    display: block;
+    width: 350px;
+    height: 50px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    background: transparent;   
+    color: white; 
+}
+
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 20px ;
+    background-color: rgba(37, 37, 37, 0.911);
+    color: white;
+    border: none;
+    margin-top:15px;
+}
+button:hover{
+    transition: .5s ease;
+    background-color: rgba(85, 85, 85, 0.63);
+}
+form h1{
+    margin-bottom: 55px;
+    color: white;
+    font-size:25px;
+}
+h6{
+    text-align: center;
+    font-size: 20px;
+    border-top: 1000px;
+}
+.text5{
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    padding: 5px;
+}
+.payments{
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 5px;
+}

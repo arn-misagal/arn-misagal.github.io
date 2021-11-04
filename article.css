@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hr1{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+h3{
+    font-size: 180px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+.ad{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.363);
+    color: white;
+    width: 85%;
+    margin: 30px auto;
+}
+span{
+    color: tomato;
+    font-family: 'Roboto Slab' ,serif;
+    font-weight: 900;
+}
+.container-1{
+    background-color: black;
+}
+h6{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+@media only screen and (max-width: 576px){
+    h3{
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    }
+}
